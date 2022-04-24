@@ -1,0 +1,117 @@
+$background: #000014;
+$highlight: #00f703;
+$contrast: #1f1f1f;
+$shadow: #001500;
+
+.project-desc {
+  margin: 1em auto;
+}
+
+.project-img {
+  width: 100%;
+  align-items: center;
+}
+.project-img img {
+  width: 90vw;
+  margin: 0 auto;
+  display: block;
+  border-radius: 10px;
+  border: 3px solid #ffffff;
+}
+
+.project-header {
+  text-align: center;
+  margin: 1em;
+  border-bottom: 3px solid #ffffff;
+}
+.project-header h1 {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.project-desc-container {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  width: 80%;
+  margin: 1em auto;
+}
+
+.project-tech {
+  padding: 1em;
+}
+.project-tech h2 {
+  border-bottom: 3px solid #ffffff;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.project-tl p {
+  margin: 1em auto;
+}
+.project-links {
+  display: flex;
+  justify-content: space-evenly;
+}
+.project-links a {
+  text-decoration: none;
+}
+.project-links span {
+  text-transform: uppercase;
+  font-weight: 300;
+  margin: 1em;
+  border: 3px solid #ffffff;
+  border-radius: 10px;
+  padding: 0.25em 1em;
+}
+
+@media only screen and (min-width: 900px) {
+  .project-desc {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr, 2fr, 1fr;
+    justify-items: center;
+    align-items: center;
+  }
+  .project-header {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 80vw;
+    margin: 1em auto;
+  }
+
+  .project-img {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .project-img img {
+    width: 40vw;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .project-tech {
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+  .project-tech {
+    width: 80%;
+    align-items: center;
+    justify-content: left;
+    padding: 1em;
+  }
+  .project-tech h2 {
+    width: 90%;
+  }
+  .project-links {
+    grid-row-start: 4;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .project-links span:hover {
+    background-color: #ffffff;
+    color: #1f1f1f;
+    transition: all 0.2s ease-in-out;
+  }
+}

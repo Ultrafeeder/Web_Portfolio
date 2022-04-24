@@ -1,0 +1,73 @@
+.portfolio-intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2em;
+}
+
+.portfolio-img {
+  margin: auto;
+  padding: 1em;
+  border: solid #ffffff 10px;
+  border-radius: 10px;
+}
+
+.portfolio-img img {
+  width: 40vw;
+}
+
+.portfolio-bio {
+  margin: 1.5em;
+}
+
+.bio-contents {
+  margin: 1.5em auto;
+  width: 70vw;
+  font-size: 1.2em;
+}
+
+.bio-contents p {
+  padding: 1em;
+  border-radius: 10px;
+  background-color: #1f1f1f;
+  text-indent: 10pt;
+  -webkit-box-shadow: -12px 30px #001500;
+          box-shadow: -12px 30px #001500;
+}
+
+.bio-github {
+  text-align: center;
+}
+
+.portfolio-github {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.portfolio-github span {
+  padding: 0.5em 2.5em;
+  border: solid #ffffff 3px;
+  border-radius: 10px;
+}
+
+.portfolio-github span:active {
+  background-color: #ffffff;
+  color: #000014;
+}
+
+@media only screen and (min-width: 768px) {
+  .portfolio-github span:hover {
+    background-color: #ffffff;
+    color: #000014;
+    -webkit-transition: all 1sec ease-in-out;
+    transition: all 1sec ease-in-out;
+  }
+}
+/*# sourceMappingURL=Headshot.css.map */

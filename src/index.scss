@@ -1,0 +1,22 @@
+@import "./scss/Footer.scss";
+@import "./scss/Form.scss";
+@import "./scss/Headshot.scss";
+@import "./scss/Nav.scss";
+@import "./scss/ProjectCards.scss";
+@import "./scss/ProjectDesc.scss";
+@import "./scss/home.scss";
+
+$background: #000014;
+$highlight: #00f703;
+$contrast: #1f1f1f;
+$shadow: #001500;
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: system-ui;
+  color: #ffffff;
+}
+html {
+  background-color: $background;
+}

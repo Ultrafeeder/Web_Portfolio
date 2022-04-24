@@ -1,0 +1,63 @@
+$background: #000014;
+$highlight: #00f703;
+$contrast: #1f1f1f;
+$shadow: #001500;
+
+.portfolio-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2em;
+}
+
+.portfolio-img {
+  margin: auto;
+  padding: 1em;
+  border: solid #ffffff 10px;
+  border-radius: 10px;
+}
+
+.portfolio-img img {
+  width: 40vw;
+  //   border-radius: 10px;
+}
+.portfolio-bio {
+  margin: 1.5em;
+}
+
+.bio-contents {
+  margin: 1.5em auto;
+  width: 70vw;
+  font-size: 1.2em;
+}
+.bio-contents p {
+  padding: 1em;
+  border-radius: 10px;
+  background-color: $contrast;
+  text-indent: 10pt;
+  box-shadow: -12px 30px $shadow;
+}
+.bio-github {
+  text-align: center;
+}
+
+.portfolio-github {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.portfolio-github span {
+  padding: 0.5em 2.5em;
+  border: solid #ffffff 3px;
+  border-radius: 10px;
+  &:active {
+    background-color: #ffffff;
+    color: #000014;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .portfolio-github span:hover {
+    background-color: #ffffff;
+    color: #000014;
+    transition: all 1sec ease-in-out;
+  }
+}

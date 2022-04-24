@@ -1,0 +1,120 @@
+$background: #000014;
+$highlight: #00f703;
+$contrast: #1f1f1f;
+$shadow: #001500;
+
+header {
+  min-height: 60px;
+  display: flex;
+  background-color: $highlight;
+  align-items: center;
+  justify-content: space-evenly;
+  overflow: hidden;
+  //   top: 0;
+  //   left: 0;
+  //   right: 0;
+  z-index: 1;
+  width: 100vw;
+  color: $contrast;
+}
+.nav-section {
+  display: flex;
+  padding: 0;
+  flex-basis: 10%;
+}
+.nav-section img {
+  height: 8em;
+}
+.nav-slogan {
+  text-transform: uppercase;
+  font-weight: 200;
+  text-align: center;
+  margin: auto;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.portfolio {
+  background-color: $background;
+  border-radius: 10px;
+  width: 60vw;
+  display: block;
+  margin: auto;
+  span {
+    background-color: $highlight;
+    padding: 10px;
+    color: $contrast;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-slogan {
+    display: none;
+  }
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  flex-basis: 10%;
+}
+
+.nav-menu span {
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+  border: solid 4px;
+  border-radius: 10px;
+  padding: 0.5em;
+  color: $contrast;
+
+  &:active {
+    background-color: $contrast;
+    color: #ffffff;
+    border-color: #ffffff;
+  }
+}
+
+.nav-section-side {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: $contrast;
+  width: 200px;
+  height: 100%;
+  transform: translateX(100%);
+  z-index: 100;
+  padding: 20px;
+  transition: 0.3s ease-in-out;
+  overflow-y: hidden;
+  overflow: scroll;
+}
+
+.nav-section-side ul li {
+  list-style: none;
+  border-bottom: 1px solid #ffffff;
+  padding-top: 1em;
+  text-transform: uppercase;
+}
+.close-btn {
+  cursor: pointer;
+  display: flex;
+  justify-content: end;
+}
+.close-btn img {
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 0.5em;
+  width: 2em;
+}
+
+.nav-section-side ul li .nav-link {
+  text-decoration: none;
+  color: #ffffff;
+}
+.show {
+  transform: translateX(0);
+  transition: 0.3s ease-in-out;
+}

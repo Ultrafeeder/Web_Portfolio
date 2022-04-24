@@ -1,0 +1,24 @@
+$background: #000014;
+$highlight: #00f703;
+$contrast: #1f1f1f;
+$shadow: #001500;
+
+.footer {
+  background-color: $highlight;
+  margin-top: 1em;
+  padding: 1em;
+}
+.icons {
+  margin: 0.5em auto;
+  width: 60vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.trademark {
+  text-align: center;
+}
+.trademark span {
+  color: $contrast;
+  font-weight: 200;
+}

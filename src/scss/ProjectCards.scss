@@ -1,0 +1,39 @@
+$background: #000014;
+$highlight: #00f703;
+$contrast: #1f1f1f;
+$shadow: #001500;
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.card {
+  margin: 1em auto;
+  padding: 1.5em 1em;
+  background-color: $contrast;
+  border-radius: 10px;
+  cursor: pointer;
+  &:active {
+    border: 3px solid #ffffff;
+  }
+}
+
+.card a {
+  text-decoration: none;
+}
+.card-img img {
+  padding: 0.5em 0.5em 1.5em;
+  width: 50vw;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+.card-title-container {
+  margin: 1em auto;
+}
+.card-title {
+  padding: 0.5em 2em 0.5em;
+  text-transform: uppercase;
+  font-weight: 150;
+}

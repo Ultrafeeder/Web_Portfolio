@@ -1,0 +1,85 @@
+form h2 {
+  text-align: center;
+}
+
+.your-name {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr;
+      grid-template-columns: 1fr 3fr;
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  padding: 1em;
+  margin: 0.5em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+}
+
+.your-name input[type="text"] {
+  margin: 0.5em 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #1f1f1f;
+  padding-left: 0.5em;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+}
+
+.your-message {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr;
+      grid-template-columns: 1fr 3fr;
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  padding: 1em;
+  margin: 0.5em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+}
+
+.your-message input[type="text"] {
+  margin: 0.5em 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #1f1f1f;
+  padding-left: 0.5em;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+}
+
+.your-message input[type="number"] {
+  margin: 0.5em 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #1f1f1f;
+  padding-left: 0.5em;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+}
+
+.your-message textarea {
+  margin: 0.5em 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #1f1f1f;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.submit {
+  background-color: #1f1f1f;
+  border-color: #ffffff;
+  color: #ffffff;
+  padding: 0 1.5em;
+  display: block;
+  margin: 0.5em auto;
+  text-align: center;
+  border-radius: 10px;
+}
+/*# sourceMappingURL=Form.css.map */
