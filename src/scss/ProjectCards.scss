@@ -37,3 +37,13 @@ $shadow: #001500;
   text-transform: uppercase;
   font-weight: 150;
 }
+
+@media only screen and(min-width:900px) {
+  .card-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .card-img img {
+    width: 30vw;
+  }
+}

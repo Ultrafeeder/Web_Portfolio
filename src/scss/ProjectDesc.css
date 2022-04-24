@@ -40,6 +40,10 @@
   margin: 1em auto;
 }
 
+.project-desc-container p {
+  text-indent: 10pt;
+}
+
 .project-tech {
   padding: 1em;
 }
@@ -95,6 +99,9 @@
     grid-column-end: 3;
     width: 80vw;
     margin: 1em auto;
+  }
+  .project-desc-container p {
+    font-size: larger;
   }
   .project-img {
     -ms-grid-column: 1;

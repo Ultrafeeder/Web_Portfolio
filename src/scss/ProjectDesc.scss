@@ -36,6 +36,9 @@ $shadow: #001500;
   width: 80%;
   margin: 1em auto;
 }
+.project-desc-container p {
+  text-indent: 10pt;
+}
 
 .project-tech {
   padding: 1em;
@@ -78,7 +81,9 @@ $shadow: #001500;
     width: 80vw;
     margin: 1em auto;
   }
-
+  .project-desc-container p {
+    font-size: larger;
+  }
   .project-img {
     grid-column-start: 1;
     grid-column-end: 2;
