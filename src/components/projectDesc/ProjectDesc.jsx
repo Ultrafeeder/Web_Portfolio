@@ -27,7 +27,7 @@ const ProjectDesc = (props) => {
         <h1>{data.project_header}</h1>
       </section>
       <section className="project-img">
-        <img src={data.screenshot} alt="project image" />
+        <img src={data.screenshot} alt="project" />
       </section>
       <section className="project-desc-container">
         <p className="project-desc">{data.project_desc}</p>
