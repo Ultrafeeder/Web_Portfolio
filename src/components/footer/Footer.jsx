@@ -1,9 +1,19 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { useLocation } from "react-router";
 import { SocialMediaIconsReact } from "social-media-icons-react";
 
 function Footer() {
+  const location = useLocation();
+  const [posAbsolute, setPosAbsolute] = useState(false);
+  useEffect(() => {
+    if (location.pathname !== "/") {
+      setPosAbsolute(true);
+    } else {
+      setPosAbsolute(false);
+    }
+  });
   return (
-    <div className="footer">
+    <div className={`footer ${posAbsolute ? "bottom" : ""}`}>
       <section className="icons">
         <SocialMediaIconsReact
           className="icon"

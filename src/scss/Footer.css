@@ -4,6 +4,13 @@
   padding: 1em;
 }
 
+.bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
 .icons {
   margin: 0.5em auto;
   width: 60vw;
