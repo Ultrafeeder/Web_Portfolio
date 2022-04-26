@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, Outlet } from "react-router-dom";
-import Logo from "../../assets/JakariStratton-logos.jpeg";
+import Logo from "../../assets/JakariStratton-logos.png";
 
 const Nav = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
